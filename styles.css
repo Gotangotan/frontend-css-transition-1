@@ -4,7 +4,6 @@
 }
 
 #menu {
-    background-color: #D84282;
     position: relative;
     margin-top:20px;
     width: var(--menu-bar-width);
@@ -13,7 +12,7 @@
 
 #menu::before,
 #menu::after,
-#menu {
+#menu div{
     background-color: #D84282;
     display: block;
     content: "";
@@ -47,8 +46,9 @@
     transform: translateY(-20px) rotate(-45deg);
 }
 
-.container:hover #menu {
-    background-color: #ffffff;
+.container:hover #menu div{
+    transform: scale(0);
 }
+
 
 
